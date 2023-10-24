@@ -11,6 +11,8 @@
 		ACC309A72AE7B88A00ADB4F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC309A62AE7B88A00ADB4F3 /* ContentView.swift */; };
 		ACC309A92AE7B88C00ADB4F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC309A82AE7B88C00ADB4F3 /* Assets.xcassets */; };
 		ACC309AC2AE7B88C00ADB4F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC309AB2AE7B88C00ADB4F3 /* Preview Assets.xcassets */; };
+		ACC309B42AE7BA2900ADB4F3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC309B32AE7BA2900ADB4F3 /* CardView.swift */; };
+		ACC309B62AE7BC1B00ADB4F3 /* ATMsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC309B52AE7BC1B00ADB4F3 /* ATMsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		ACC309A62AE7B88A00ADB4F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ACC309A82AE7B88C00ADB4F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACC309AB2AE7B88C00ADB4F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACC309B32AE7BA2900ADB4F3 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		ACC309B52AE7BC1B00ADB4F3 /* ATMsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		ACC309A32AE7B88A00ADB4F3 /* NearestATM */ = {
 			isa = PBXGroup;
 			children = (
+				ACC309B22AE7BA0400ADB4F3 /* Views */,
 				ACC309A42AE7B88A00ADB4F3 /* NearestATMApp.swift */,
 				ACC309A62AE7B88A00ADB4F3 /* ContentView.swift */,
 				ACC309A82AE7B88C00ADB4F3 /* Assets.xcassets */,
@@ -65,6 +70,15 @@
 				ACC309AB2AE7B88C00ADB4F3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACC309B22AE7BA0400ADB4F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACC309B32AE7BA2900ADB4F3 /* CardView.swift */,
+				ACC309B52AE7BC1B00ADB4F3 /* ATMsListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACC309A72AE7B88A00ADB4F3 /* ContentView.swift in Sources */,
+				ACC309B62AE7BC1B00ADB4F3 /* ATMsListView.swift in Sources */,
+				ACC309B42AE7BA2900ADB4F3 /* CardView.swift in Sources */,
 				ACC309A52AE7B88A00ADB4F3 /* NearestATMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
