@@ -10,11 +10,22 @@ import SwiftUI
 struct ATMsListView: View {
     let atms: [ATM]
     var body: some View {
-        List(atms, id : \.brand)
-        {
-            atm in
-            CardView(atm: atm)
+        NavigationStack{
+            List(atms, id : \.brand)
+            {
+                atm in
+                NavigationLink(destination: DetailView(atm: atm))
+                {
+                    CardView(atm: atm)
+                }
                 .listRowBackground(atm.theme.mainColor)
+            }
+            .navigationTitle("Nearest ATMs")
+            .toolbar {
+                Button(action: {}) {
+                    Image(systemName: "plus")
+                }
+            }
         }
     }
 }

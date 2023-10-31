@@ -11,7 +11,7 @@ import SwiftUI
 struct NearestATMApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ATMsListView(atms: ATM.sampleData)
         }
     }
 }

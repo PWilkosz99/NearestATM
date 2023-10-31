@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		987B23BE2AF0FBCA00381438 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987B23BD2AF0FBCA00381438 /* Theme.swift */; };
+		987B23C22AF101CD00381438 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987B23C12AF101CD00381438 /* DetailView.swift */; };
 		ACC309A52AE7B88A00ADB4F3 /* NearestATMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC309A42AE7B88A00ADB4F3 /* NearestATMApp.swift */; };
-		ACC309A72AE7B88A00ADB4F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC309A62AE7B88A00ADB4F3 /* ContentView.swift */; };
 		ACC309A92AE7B88C00ADB4F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC309A82AE7B88C00ADB4F3 /* Assets.xcassets */; };
 		ACC309AC2AE7B88C00ADB4F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC309AB2AE7B88C00ADB4F3 /* Preview Assets.xcassets */; };
 		ACC309B42AE7BA2900ADB4F3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC309B32AE7BA2900ADB4F3 /* CardView.swift */; };
@@ -19,9 +19,9 @@
 
 /* Begin PBXFileReference section */
 		987B23BD2AF0FBCA00381438 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		987B23C12AF101CD00381438 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		ACC309A12AE7B88A00ADB4F3 /* NearestATM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearestATM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC309A42AE7B88A00ADB4F3 /* NearestATMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestATMApp.swift; sourceTree = "<group>"; };
-		ACC309A62AE7B88A00ADB4F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ACC309A82AE7B88C00ADB4F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACC309AB2AE7B88C00ADB4F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACC309B32AE7BA2900ADB4F3 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -62,7 +62,6 @@
 				ACC309B72AE7BD7700ADB4F3 /* Models */,
 				ACC309B22AE7BA0400ADB4F3 /* Views */,
 				ACC309A42AE7B88A00ADB4F3 /* NearestATMApp.swift */,
-				ACC309A62AE7B88A00ADB4F3 /* ContentView.swift */,
 				ACC309A82AE7B88C00ADB4F3 /* Assets.xcassets */,
 				ACC309AA2AE7B88C00ADB4F3 /* Preview Content */,
 			);
@@ -82,6 +81,7 @@
 			children = (
 				ACC309B32AE7BA2900ADB4F3 /* CardView.swift */,
 				ACC309B52AE7BC1B00ADB4F3 /* ATMsListView.swift */,
+				987B23C12AF101CD00381438 /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,8 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACC309A72AE7B88A00ADB4F3 /* ContentView.swift in Sources */,
 				ACC309B62AE7BC1B00ADB4F3 /* ATMsListView.swift in Sources */,
+				987B23C22AF101CD00381438 /* DetailView.swift in Sources */,
 				ACC309B42AE7BA2900ADB4F3 /* CardView.swift in Sources */,
 				987B23BE2AF0FBCA00381438 /* Theme.swift in Sources */,
 				ACC309B92AE7BD8000ADB4F3 /* ATM.swift in Sources */,
