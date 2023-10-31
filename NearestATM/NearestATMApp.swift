@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct NearestATMApp: App {
+    @State private var ATMs = ATM.sampleData
     var body: some Scene {
         WindowGroup {
-            ATMsListView(atms: ATM.sampleData)
+            ATMsListView(atms: .constant(ATM.sampleData))
         }
     }
 }

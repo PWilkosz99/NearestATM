@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ATMsListView: View {
-    let atms: [ATM]
+    @Binding var atms: [ATM]
     var body: some View {
         NavigationStack{
             List(atms, id : \.brand)
@@ -31,5 +31,5 @@ struct ATMsListView: View {
 }
 
 #Preview {
-    ATMsListView(atms: ATM.sampleData)
+    ATMsListView(atms: .constant(ATM.sampleData))
 }

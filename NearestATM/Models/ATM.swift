@@ -7,12 +7,22 @@
 
 import Foundation
 
-struct ATM{
+struct ATM : Identifiable{
+    let id: UUID
     var brand: String
     var city: String
     var address: String
     var cash_in: Bool
     var theme: Theme
+
+init(id: UUID = UUID(), brand: String, city: String, address: String, cash_in: Bool, theme: Theme){
+    self.id = id
+    self.brand = brand
+    self.city = city
+    self.address = address
+    self.cash_in = cash_in
+    self.theme = theme
+    }
 }
 
 extension ATM{
