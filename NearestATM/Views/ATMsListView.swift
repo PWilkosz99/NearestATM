@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct ATMsListView: View {
+    let atms: [ATM]
     var body: some View {
-        CardView()
-        CardView()
-        CardView()
-        CardView()
-        CardView()
+        List(atms, id : \.brand)
+        {
+            atm in
+            CardView(atm: atm)
+                .listRowBackground(atm.theme.mainColor)
+        }
     }
 }
 
 #Preview {
-    ATMsListView()
+    ATMsListView(atms: ATM.sampleData)
 }

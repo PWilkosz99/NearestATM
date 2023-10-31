@@ -8,26 +8,38 @@
 import SwiftUI
 
 struct CardView: View {
+    let atm: ATM
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Brand")
+            Text(atm.brand)
                 .font(.headline)
             Spacer()
             HStack {
-                Label("10m", systemImage: "road.lanes")
+                Label(atm.city, systemImage: "road.lanes")
                 Spacer()
-                Label("Krakow", systemImage: "mappin")
+                Label(atm.address, systemImage: "mappin")
                 Spacer()
-                Label("cash in", systemImage: "dollarsign.arrow.circlepath")
-                    .padding(.trailing, 20)
+                if atm.cash_in {
+                    Image(systemName: "dollarsign.arrow.circlepath")
+                        .font(.system(size: 24))
+                        .padding(.trailing, 10)
+                } else {
+                    Image(systemName: "xmark.circle")
+                        .font(.system(size: 24))
+                        .padding(.trailing, 10)
+                }
             }
             .font(.caption)
         }
         .padding()
+        .foregroundColor(atm.theme.accentColor)
     }
 }
 
-#Preview {
-    CardView()
-        .previewLayout(.fixed(width: 400, height: 60))
+struct CardView_Previews: PreviewProvider {
+    static var atm = ATM.sampleData[0]
+    static var previews: some View {
+        CardView(atm: atm)
+            .previewLayout(.fixed(width: 400, height: 60))
+    }
 }
