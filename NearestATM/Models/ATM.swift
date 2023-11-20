@@ -47,21 +47,21 @@ extension ATM{
             location: CLLocationCoordinate2D(latitude: 50.0647, longitude: 19.9450),
             city: "Kraków",
             address: "Czarnowiejska 10",
-            theme: .bubblegum
+            theme: .electricBlue
         ),
         ATM(brand: "Bank Pekao",
             cash_in: false,
             location: CLLocationCoordinate2D(latitude: 50.0647, longitude: 19.9450),
             city: "Kraków",
             address: "Czarnowiejska 20",
-            theme: .buttercup
+            theme: .lavenderMist
         ),
         ATM(brand: "Euronet",
             cash_in: true,
             location: CLLocationCoordinate2D(latitude: 50.0647, longitude: 19.9450),
             city: "Kraków",
             address: "Czarnowiejska 30",
-            theme: .indigo
+            theme: .midnightBlue
         )
     ]
 }
