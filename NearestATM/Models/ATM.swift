@@ -46,7 +46,11 @@ extension ATM{
             cash_in: false,
             location: CLLocationCoordinate2D(latitude: 50.0647, longitude: 19.9450),
             city: "Kraków",
-            address: "Czarnowiejska 10"
+            address: "Czarnowiejska 10",
+            opening_hours: "0h - 24h",
+            fee: "for foreign cards",
+            charge: "10 PLN",
+            wheelchair: "Avaliable - ramp"
         ),
         ATM(brand: "Bank Pekao",
             cash_in: false,

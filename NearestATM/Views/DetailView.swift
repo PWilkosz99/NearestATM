@@ -28,8 +28,36 @@ struct DetailView: View {
                 HStack {
                     Label("Cash-in avaliable", systemImage: "dollarsign.arrow.circlepath")
                     Spacer()
-                    Text(String(atm.cash_in ))
+                    Text(atm.cash_in ? "Yes" : "No")
                 }
+                if let openingHours = atm.opening_hours {
+                                    HStack {
+                                        Label("Opening hours", systemImage: "clock.fill")
+                                        Spacer()
+                                        Text(openingHours)
+                                    }
+                                }
+                if let fee = atm.fee {
+                                    HStack {
+                                        Label("Fee", systemImage: "dollarsign.arrow.circlepath")
+                                        Spacer()
+                                        Text(fee)
+                                    }
+                                }
+                if let charge = atm.charge {
+                                    HStack {
+                                        Label("Charge", systemImage: "dollarsign.square")
+                                        Spacer()
+                                        Text(charge)
+                                    }
+                                }
+                if let wheelchair = atm.wheelchair {
+                                    HStack {
+                                        Label("Wheelchair", systemImage: "figure.roll")
+                                        Spacer()
+                                        Text(wheelchair)
+                                    }
+                                }
             }
             Section(header: Text("Location")) {
                 Image(.mockedMap)
