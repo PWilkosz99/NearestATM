@@ -9,14 +9,15 @@ import SwiftUI
 
 struct ATMsListView: View {
     @Binding var atms: [ATM]
+    
     var body: some View {
         NavigationStack{
-            List(atms, id : \.brand)
+            List($atms, id : \.brand)
             {
-                atm in
-                NavigationLink(destination: DetailView(atm: atm))
+                $atm in
+                NavigationLink(destination: DetailView(atm: $atm))
                 {
-                    CardView(atm: atm)
+                    CardView(atm: $atm)
                 }
                 .listRowBackground(atm.cash_in ? Theme.electricBlue.mainColor : Theme.steelBlue.mainColor)
             }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CardView: View {
-    let atm: ATM
+    @Binding var atm: ATM
     var body: some View {
         VStack(alignment: .leading) {
             Text(atm.brand)
@@ -28,6 +28,13 @@ struct CardView: View {
                         .font(.system(size: 24))
                         .padding(.trailing, 10)
                 }
+                
+                Image(systemName: atm.isFavorite ? "heart.fill" : "heart")
+                    .font(.system(size: 24))
+                    .foregroundColor(atm.isFavorite ? Color.red : Color.gray)
+                    .onTapGesture {
+                        atm.isFavorite = !atm.isFavorite
+                    }
             }
             .font(.caption)
         }
@@ -39,7 +46,7 @@ struct CardView: View {
 struct CardView_Previews: PreviewProvider {
     static var atm = ATM.sampleData[0]
     static var previews: some View {
-        CardView(atm: atm)
+        CardView(atm: .constant(atm))
             .previewLayout(.fixed(width: 400, height: 60))
     }
 }

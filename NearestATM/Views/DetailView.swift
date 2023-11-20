@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DetailView: View {
-    let atm: ATM
+    @Binding var atm: ATM
     var body: some View {
         List{
             Section(header: Text("ATM Info")) {
@@ -44,6 +44,6 @@ struct DetailView: View {
 
 #Preview {
     NavigationStack {
-        DetailView(atm: ATM.sampleData[0])
+        DetailView(atm: .constant(ATM.sampleData[0]))
     }
 }
