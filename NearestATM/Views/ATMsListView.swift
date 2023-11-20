@@ -18,7 +18,7 @@ struct ATMsListView: View {
                 {
                     CardView(atm: atm)
                 }
-                .listRowBackground(atm.theme.mainColor)
+                .listRowBackground(atm.cash_in ? Theme.electricBlue.mainColor : Theme.steelBlue.mainColor)
             }
             .navigationTitle("Nearest ATMs")
             .toolbar {

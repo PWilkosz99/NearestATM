@@ -32,7 +32,7 @@ struct CardView: View {
             .font(.caption)
         }
         .padding()
-        .foregroundColor(atm.theme.accentColor)
+        .foregroundColor(atm.cash_in ? Theme.electricBlue.accentColor : Theme.steelBlue.accentColor)
     }
 }
 

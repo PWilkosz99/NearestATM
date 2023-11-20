@@ -21,10 +21,8 @@ struct ATM : Identifiable{
     var fee: String?
     var charge: String?
     var wheelchair: String?
-    
-    var theme: Theme
 
-    internal init(id: UUID = UUID(), brand: String, cash_in: Bool, location: CLLocationCoordinate2D, city: String, address: String, opening_hours: String? = nil, fee: String? = nil, charge: String? = nil, wheelchair: String? = nil, theme: Theme) {
+    internal init(id: UUID = UUID(), brand: String, cash_in: Bool, location: CLLocationCoordinate2D, city: String, address: String, opening_hours: String? = nil, fee: String? = nil, charge: String? = nil, wheelchair: String? = nil) {
         self.id = id
         self.brand = brand
         self.cash_in = cash_in
@@ -35,7 +33,6 @@ struct ATM : Identifiable{
         self.fee = fee
         self.charge = charge
         self.wheelchair = wheelchair
-        self.theme = theme
     }
 }
 
@@ -46,22 +43,19 @@ extension ATM{
             cash_in: false,
             location: CLLocationCoordinate2D(latitude: 50.0647, longitude: 19.9450),
             city: "Kraków",
-            address: "Czarnowiejska 10",
-            theme: .electricBlue
+            address: "Czarnowiejska 10"
         ),
         ATM(brand: "Bank Pekao",
             cash_in: false,
             location: CLLocationCoordinate2D(latitude: 50.0647, longitude: 19.9450),
             city: "Kraków",
-            address: "Czarnowiejska 20",
-            theme: .lavenderMist
+            address: "Czarnowiejska 20"
         ),
         ATM(brand: "Euronet",
             cash_in: true,
             location: CLLocationCoordinate2D(latitude: 50.0647, longitude: 19.9450),
             city: "Kraków",
-            address: "Czarnowiejska 30",
-            theme: .midnightBlue
+            address: "Czarnowiejska 30"
         )
     ]
 }
