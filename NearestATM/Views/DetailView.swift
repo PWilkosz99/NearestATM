@@ -9,51 +9,90 @@ import SwiftUI
 
 struct DetailView: View {
     @Binding var atm: ATM
+    
     var body: some View {
+        let themeColor = atm.cash_in ? Theme.electricBlue.mainColor : Theme.lavenderMist.mainColor
+        
         List{
             Section(header: Text("ATM Info")) {
                 Label(atm.brand, systemImage: "banknote")
                     .font(.headline)
-                    .foregroundColor(.accentColor)
+                    .foregroundColor(themeColor)
                 HStack {
-                    Label("City", systemImage: "building.2.fill")
+                    Label {
+                        Text("City")
+                    } icon: {
+                        Image(systemName: "building.2.fill")
+                            .foregroundColor(themeColor)
+                    }
                     Spacer()
                     Text(atm.city)
                 }
                 HStack {
-                    Label("Address", systemImage: "mappin")
+                    Label {
+                        Text("Address")
+                    } icon: {
+                        Image(systemName: "mappin")
+                            .foregroundColor(themeColor)
+                    }
                     Spacer()
                     Text(atm.address)
                 }
                 HStack {
-                    Label("Cash-in avaliable", systemImage: "dollarsign.arrow.circlepath")
+                    Label {
+                        Text("Cash-in avaliable")
+                    } icon: {
+                        Image(systemName: "dollarsign.arrow.circlepath")
+                            .foregroundColor(themeColor)
+                    }
                     Spacer()
                     Text(atm.cash_in ? "Yes" : "No")
+                        .foregroundColor(atm.cash_in ? .green : .red)
                 }
                 if let openingHours = atm.opening_hours {
                                     HStack {
-                                        Label("Opening hours", systemImage: "clock.fill")
+                                        Label {
+                                            Text("Opening hours")
+                                        } icon: {
+                                            Image(systemName: "clock.fill")
+                                                .foregroundColor(themeColor)
+                                        }
                                         Spacer()
                                         Text(openingHours)
                                     }
                                 }
                 if let fee = atm.fee {
                                     HStack {
-                                        Label("Fee", systemImage: "dollarsign.arrow.circlepath")
+                                        Label {
+                                            Text("Fee")
+                                        } icon: {
+                                            Image(systemName: "dollarsign.arrow.circlepath")
+                                                .foregroundColor(themeColor)
+                                        }
                                         Spacer()
                                         Text(fee)
                                     }
                                 }
                 if let charge = atm.charge {
                                     HStack {
-                                        Label("Charge", systemImage: "dollarsign.square")
+                                        Label {
+                                            Text("Charge")
+                                        } icon: {
+                                            Image(systemName: "dollarsign.square")
+                                                .foregroundColor(themeColor)
+                                        }
                                         Spacer()
                                         Text(charge)
                                     }
                                 }
                 if let wheelchair = atm.wheelchair {
                                     HStack {
-                                        Label("Wheelchair", systemImage: "figure.roll")
+                                        Label {
+                                            Text("Wheelchair")
+                                        } icon: {
+                                            Image(systemName: "figure.roll")
+                                                .foregroundColor(themeColor)
+                                        }
                                         Spacer()
                                         Text(wheelchair)
                                     }
