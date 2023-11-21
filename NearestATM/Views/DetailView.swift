@@ -97,6 +97,18 @@ struct DetailView: View {
                                         Text(wheelchair)
                                     }
                                 }
+                HStack {
+                    Image(systemName: atm.isFavorite ? "heart.fill" : "heart")
+                        .foregroundColor(themeColor)
+                        .imageScale(.large)
+                        .onTapGesture {
+                            atm.isFavorite.toggle()
+                        }
+                    Spacer()
+                    Toggle("Favorite", isOn: $atm.isFavorite)
+                        .padding(.leading)
+                }
+
             }
             Section(header: Text("Location")) {
                 Image(.mockedMap)
