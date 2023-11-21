@@ -14,6 +14,7 @@ struct CardView: View {
             Text(atm.brand)
                 .font(.headline)
                 .padding(.bottom, 4)
+                .accessibilityAddTraits(.isHeader)
             Spacer()
             HStack {
                 VStack(alignment: .leading) {
@@ -22,15 +23,18 @@ struct CardView: View {
                         .bold()
                         .multilineTextAlignment(.center)
                         .padding(.bottom)
+                        .accessibilityLabel("city \(atm.city)")
                     Label(atm.address, systemImage: "mappin.and.ellipse")
                         .font(.caption)
                         .bold()
                         .multilineTextAlignment(.center)
+                        .accessibilityLabel("address \(atm.address)")
                 }
                 Spacer()
                 Image(systemName: atm.cash_in ? "dollarsign.arrow.circlepath" : "xmark.circle")
                     .font(.system(size: 24))
                     .padding(.trailing, 10)
+                    .accessibilityLabel("cash in \(atm.cash_in ? "" : "not") avaliable")
                 
                 Image(systemName: atm.isFavorite ? "heart.fill" : "heart")
                     .font(.system(size: 24))
@@ -38,6 +42,7 @@ struct CardView: View {
                     .onTapGesture {
                         atm.isFavorite = !atm.isFavorite
                     }
+                    .accessibilityLabel("atm \(atm.cash_in ? "" : "not") added to favorite")
             }
             .font(.caption)
         }

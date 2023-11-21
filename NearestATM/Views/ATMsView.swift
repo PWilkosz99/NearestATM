@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ATMsListView: View {
+struct ATMsView: View {
     @Binding var atms: [ATM]
     
     var body: some View {
@@ -32,5 +32,5 @@ struct ATMsListView: View {
 }
 
 #Preview {
-    ATMsListView(atms: .constant(ATM.sampleData))
+    ATMsView(atms: .constant(ATM.sampleData))
 }

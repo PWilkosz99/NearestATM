@@ -28,6 +28,7 @@ struct DetailView: View {
                     Spacer()
                     Text(atm.city)
                 }
+                .accessibilityElement(children: .combine)
                 HStack {
                     Label {
                         Text("Address")
@@ -38,6 +39,7 @@ struct DetailView: View {
                     Spacer()
                     Text(atm.address)
                 }
+                .accessibilityElement(children: .combine)
                 HStack {
                     Label {
                         Text("Cash-in avaliable")
@@ -49,6 +51,7 @@ struct DetailView: View {
                     Text(atm.cash_in ? "Yes" : "No")
                         .foregroundColor(atm.cash_in ? .green : .red)
                 }
+                .accessibilityElement(children: .combine)
                 if let openingHours = atm.opening_hours {
                                     HStack {
                                         Label {
@@ -60,6 +63,7 @@ struct DetailView: View {
                                         Spacer()
                                         Text(openingHours)
                                     }
+                                    .accessibilityElement(children: .combine)
                                 }
                 if let fee = atm.fee {
                                     HStack {
@@ -72,6 +76,7 @@ struct DetailView: View {
                                         Spacer()
                                         Text(fee)
                                     }
+                                    .accessibilityElement(children: .combine)
                                 }
                 if let charge = atm.charge {
                                     HStack {
@@ -84,6 +89,7 @@ struct DetailView: View {
                                         Spacer()
                                         Text(charge)
                                     }
+                                    .accessibilityElement(children: .combine)
                                 }
                 if let wheelchair = atm.wheelchair {
                                     HStack {
@@ -96,6 +102,7 @@ struct DetailView: View {
                                         Spacer()
                                         Text(wheelchair)
                                     }
+                                    .accessibilityElement(children: .combine)
                                 }
                 HStack {
                     Image(systemName: atm.isFavorite ? "heart.fill" : "heart")
@@ -108,6 +115,7 @@ struct DetailView: View {
                     Toggle("Favorite", isOn: $atm.isFavorite)
                         .padding(.leading)
                 }
+                .accessibilityElement(children: .combine)
 
             }
             Section(header: Text("Location")) {

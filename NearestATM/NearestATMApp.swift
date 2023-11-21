@@ -12,7 +12,7 @@ struct NearestATMApp: App {
     @State private var ATMs = ATM.sampleData
     var body: some Scene {
         WindowGroup {
-            ATMsListView(atms: $ATMs)
+            ATMsView(atms: $ATMs)
         }
     }
 }
