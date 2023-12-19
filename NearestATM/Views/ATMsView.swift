@@ -12,7 +12,7 @@ struct ATMsView: View {
     
     var body: some View {
         NavigationStack{
-            List($atms, id : \.brand)
+            List($atms, id : \.id)
             {
                 $atm in
                 NavigationLink(destination: DetailView(atm: $atm))
