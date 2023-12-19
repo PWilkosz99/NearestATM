@@ -1,0 +1,1026 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.61.5 4133829e",
+  "osm3s": {
+    "timestamp_osm_base": "2023-12-12T07:45:09Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 475387316,
+      "lat": 50.0622357,
+      "lon": 19.9359087,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Bank Pekao",
+        "brand:wikidata": "Q806642",
+        "check_date": "2021-03-17",
+        "name": "Bank Pekao",
+        "operator": "Bank Pekao",
+        "operator:wikidata": "Q806642"
+      }
+    },
+    {
+      "type": "node",
+      "id": 935799384,
+      "lat": 50.0610000,
+      "lon": 19.9442000,
+      "tags": {
+        "addr:city": "Kraków",
+        "addr:country": "PL",
+        "addr:housenumber": "15/16",
+        "addr:street": "Westerplatte",
+        "amenity": "atm",
+        "atm_ref": "2053200",
+        "millennium:date": "2009-05-21 17:13:02",
+        "millennium:network": "BZ WBK",
+        "millennium:ref": "18955",
+        "millennium:subtype": "Euronet",
+        "name": "Bankomat BZ WBK",
+        "operator": "Euronet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 935799489,
+      "lat": 50.0645068,
+      "lon": 19.9461217,
+      "tags": {
+        "addr:city": "Kraków",
+        "addr:country": "PL",
+        "addr:housenumber": "5a",
+        "addr:street": "Lubicz",
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "millennium:date": "2010-05-18 11:08:39",
+        "millennium:network": "BZ WBK",
+        "millennium:ref": "20908",
+        "millennium:subtype": "Euronet",
+        "name": "Bankomat BZ WBK",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 935801754,
+      "lat": 50.0638439,
+      "lon": 19.9328022,
+      "tags": {
+        "addr:city": "Kraków",
+        "addr:country": "PL",
+        "addr:housenumber": "3",
+        "addr:street": "Karmelicka",
+        "amenity": "atm",
+        "atm_ref": "ML3128A",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "millennium:date": "2009-05-21 17:13:02",
+        "millennium:network": "Millennium",
+        "millennium:ref": "18031",
+        "millennium:subtype": "Euronet",
+        "name": "Millennium",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 935801963,
+      "lat": 50.0664782,
+      "lon": 19.9400295,
+      "tags": {
+        "addr:city": "Kraków",
+        "addr:country": "PL",
+        "addr:housenumber": "4",
+        "addr:street": "Rynek Kleparski",
+        "amenity": "atm",
+        "atm_ref": "ML3096A",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "millennium:date": "2009-05-21 17:13:02",
+        "millennium:network": "Millennium",
+        "millennium:ref": "18036",
+        "millennium:subtype": "Euronet",
+        "name": "Bankomat Millennium",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 938166454,
+      "lat": 50.0628043,
+      "lon": 19.9401801,
+      "tags": {
+        "addr:city": "Kraków",
+        "addr:country": "PL",
+        "addr:housenumber": "17",
+        "addr:street": "Floriańska",
+        "amenity": "atm",
+        "atm_ref": "ML3103A",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1777650825,
+      "lat": 50.0599555,
+      "lon": 19.9376241,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "location": "wall",
+        "opening_hours": "24/7",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1862676201,
+      "lat": 50.0621529,
+      "lon": 19.9361520,
+      "tags": {
+        "addr:housenumber": "31",
+        "addr:street": "Rynek Główny",
+        "amenity": "atm",
+        "brand": "Bank Pekao",
+        "brand:wikidata": "Q806642",
+        "check_date": "2021-03-17",
+        "operator": "Bank Pekao",
+        "operator:wikidata": "Q806642"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1862677324,
+      "lat": 50.0624416,
+      "lon": 19.9353381,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "name": "Euronet",
+        "opening_hours": "24/7",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3012787772,
+      "lat": 50.0638127,
+      "lon": 19.9375659,
+      "tags": {
+        "addr:city": "Kraków",
+        "addr:housenumber": "12",
+        "addr:postcode": "31-018",
+        "addr:street": "Sławkowska",
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3012787773,
+      "lat": 50.0625127,
+      "lon": 19.9380452,
+      "tags": {
+        "addr:city": "Kraków",
+        "addr:housenumber": "2",
+        "addr:postcode": "31-018",
+        "addr:street": "Świętego Jana",
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "cash_in": "no",
+        "check_date": "2022-09-28",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3012787775,
+      "lat": 50.0626102,
+      "lon": 19.9395338,
+      "tags": {
+        "addr:city": "Kraków",
+        "addr:housenumber": "6",
+        "addr:postcode": "31-021",
+        "addr:street": "Floriańska",
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3012787776,
+      "lat": 50.0643330,
+      "lon": 19.9410646,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3012787777,
+      "lat": 50.0645000,
+      "lon": 19.9423413,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3278951011,
+      "lat": 50.0646642,
+      "lon": 19.9410892,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3368734699,
+      "lat": 50.0642927,
+      "lon": 19.9319066,
+      "tags": {
+        "amenity": "atm",
+        "check_date": "2021-03-30",
+        "operator": "Eurobank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3368767638,
+      "lat": 50.0652173,
+      "lon": 19.9346692,
+      "tags": {
+        "amenity": "atm",
+        "check_date": "2023-04-08",
+        "name": "BSR",
+        "operator": "BSR"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3370651175,
+      "lat": 50.0669647,
+      "lon": 19.9429439,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3372131990,
+      "lat": 50.0671749,
+      "lon": 19.9440918,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "check_date": "2022-02-03",
+        "name": "Euronet",
+        "opening_hours": "24/7",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3372148214,
+      "lat": 50.0643797,
+      "lon": 19.9451171,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Crédit Agricole",
+        "brand:wikidata": "Q590952",
+        "cash_in": "no",
+        "check_date": "2023-07-29",
+        "name": "Crédit Agricole",
+        "operator": "Crédit Agricole",
+        "operator:wikidata": "Q590952"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3372148215,
+      "lat": 50.0645030,
+      "lon": 19.9447629,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "cash_in": "no",
+        "check_date": "2023-11-18",
+        "layer": "-1",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3373671331,
+      "lat": 50.0597419,
+      "lon": 19.9378520,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3649039076,
+      "lat": 50.0633796,
+      "lon": 19.9325894,
+      "tags": {
+        "addr:city": "Kraków",
+        "addr:housenumber": "6",
+        "addr:street": "Podwale",
+        "amenity": "atm",
+        "brand": "Bank Pekao",
+        "brand:wikidata": "Q806642",
+        "name": "Bank Pekao",
+        "opening_hours": "24/7",
+        "operator": "Bank Pekao",
+        "operator:wikidata": "Q806642",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3852667218,
+      "lat": 50.0628901,
+      "lon": 19.9411937,
+      "tags": {
+        "addr:city": "Kraków",
+        "addr:housenumber": "20",
+        "addr:street": "Szpitalna",
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "check_date": "2022-09-28",
+        "name": "Euronet",
+        "opening_hours": "24/7",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3884879754,
+      "lat": 50.0666445,
+      "lon": 19.9397457,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Bank Pekao",
+        "brand:wikidata": "Q806642",
+        "cash_in": "yes",
+        "check_date": "2022-10-20",
+        "operator": "Bank Pekao",
+        "operator:wikidata": "Q806642"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3884879755,
+      "lat": 50.0668827,
+      "lon": 19.9399958,
+      "tags": {
+        "amenity": "atm",
+        "cash_in": "yes",
+        "check_date": "2023-09-29",
+        "operator": "Krakowski Bank Spółdzielczy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3884880057,
+      "lat": 50.0653412,
+      "lon": 19.9370921,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Bank Pekao",
+        "brand:wikidata": "Q806642",
+        "check_date": "2021-01-23",
+        "location": "outdoor",
+        "operator": "Bank Pekao",
+        "operator:wikidata": "Q806642"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3884880058,
+      "lat": 50.0609764,
+      "lon": 19.9445982,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Santander",
+        "brand:wikidata": "Q5835668",
+        "check_date": "2021-08-15",
+        "name": "Santander",
+        "operator": "Santander",
+        "operator:wikidata": "Q5835668"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4036995027,
+      "lat": 50.0606175,
+      "lon": 19.9349532,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "cash_in": "no",
+        "name": "Euronet",
+        "opening_hours": "24/7",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4281246646,
+      "lat": 50.0609761,
+      "lon": 19.9391399,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "name": "Euronet",
+        "opening_hours": "24/7",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4362871533,
+      "lat": 50.0636693,
+      "lon": 19.9329661,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "covered": "yes",
+        "indoor": "no",
+        "opening_hours": "24/7",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4442924603,
+      "lat": 50.0648116,
+      "lon": 19.9384533,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "cash_in": "no",
+        "check_date": "2023-09-29",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4743716907,
+      "lat": 50.0669205,
+      "lon": 19.9404892,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "check_date": "2021-06-04",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4982713471,
+      "lat": 50.0647406,
+      "lon": 19.9314776,
+      "tags": {
+        "amenity": "atm",
+        "check_date": "2023-07-06"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4982713474,
+      "lat": 50.0615243,
+      "lon": 19.9347838,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "check_date": "2023-03-29",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4982713484,
+      "lat": 50.0594282,
+      "lon": 19.9378922,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "check_date": "2022-09-18",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4985735565,
+      "lat": 50.0652597,
+      "lon": 19.9434212,
+      "tags": {
+        "amenity": "atm",
+        "brand": "PKO BP",
+        "brand:wikidata": "Q578832",
+        "name": "PKO BP",
+        "operator": "PKO BP",
+        "operator:wikidata": "Q578832"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5066242772,
+      "lat": 50.0623751,
+      "lon": 19.9393223,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Bank Pekao",
+        "brand:wikidata": "Q806642",
+        "operator": "Bank Pekao",
+        "operator:wikidata": "Q806642"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5066242773,
+      "lat": 50.0627806,
+      "lon": 19.9396691,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "opening_hours": "24/7",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5066242774,
+      "lat": 50.0631104,
+      "lon": 19.9399284,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "check_date": "2021-04-07",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5066243234,
+      "lat": 50.0633587,
+      "lon": 19.9403193,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5749639003,
+      "lat": 50.0652337,
+      "lon": 19.9387584,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "check_date": "2021-01-23",
+        "name": "Euronet",
+        "opening_hours": "24/7",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6434664198,
+      "lat": 50.0641332,
+      "lon": 19.9377996,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "cash_in": "yes",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6570460840,
+      "lat": 50.0642311,
+      "lon": 19.9421906,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "location": "outdoor",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7157204538,
+      "lat": 50.0665213,
+      "lon": 19.9462715,
+      "tags": {
+        "amenity": "atm",
+        "level": "1"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7157204543,
+      "lat": 50.0661694,
+      "lon": 19.9459858,
+      "tags": {
+        "amenity": "atm",
+        "level": "0",
+        "operator": "Bank Polski"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7157204544,
+      "lat": 50.0661754,
+      "lon": 19.9461816,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "level": "0",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7157204606,
+      "lat": 50.0671587,
+      "lon": 19.9467521,
+      "tags": {
+        "amenity": "atm",
+        "level": "-1"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7157204607,
+      "lat": 50.0671584,
+      "lon": 19.9467354,
+      "tags": {
+        "amenity": "atm",
+        "currency:XBT": "yes",
+        "level": "-1",
+        "name": "Bitomat emoney24",
+        "network": "emoney24",
+        "payment:lightning": "no",
+        "payment:onchain": "yes",
+        "survey:date": "2022-10-21",
+        "website": "https://emoney24.io/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7816340776,
+      "lat": 50.0654268,
+      "lon": 19.9448872,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7983143981,
+      "lat": 50.0621560,
+      "lon": 19.9393834,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8532109572,
+      "lat": 50.0633524,
+      "lon": 19.9410962,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ING Bank Śląski",
+        "brand:wikidata": "Q1410383",
+        "brand:wikipedia": "pl:ING Bank Śląski",
+        "name": "ING Bank Śląski",
+        "operator": "ING Bank Śląski",
+        "operator:wikidata": "Q1410383",
+        "operator:wikipedia": "pl:ING Bank Śląski"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8532224292,
+      "lat": 50.0611261,
+      "lon": 19.9360043,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "brand:wikipedia": "en:Euronet Worldwide",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010",
+        "operator:wikipedia": "en:Euronet Worldwide"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8787157573,
+      "lat": 50.0645645,
+      "lon": 19.9421087,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8787188404,
+      "lat": 50.0645731,
+      "lon": 19.9380586,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "cash_in": "yes",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8787231559,
+      "lat": 50.0651073,
+      "lon": 19.9386560,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "cash_in": "yes",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8830081623,
+      "lat": 50.0652352,
+      "lon": 19.9459729,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Planet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9077088499,
+      "lat": 50.0606509,
+      "lon": 19.9349408,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "cash_in": "yes",
+        "name": "Euronet",
+        "opening_hours": "24/7",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9081528483,
+      "lat": 50.0638709,
+      "lon": 19.9332606,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "cash_in": "no",
+        "indoor": "no",
+        "opening_hours": "24/7",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10034071862,
+      "lat": 50.0629963,
+      "lon": 19.9365613,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "check_date": "2022-09-18",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10054869757,
+      "lat": 50.0607562,
+      "lon": 19.9380551,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "cash_in": "no",
+        "name": "Euronet",
+        "opening_hours": "24/7",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10074052857,
+      "lat": 50.0609695,
+      "lon": 19.9364740,
+      "tags": {
+        "amenity": "atm",
+        "brand": "PKO BP",
+        "brand:wikidata": "Q578832",
+        "name": "PKO BP",
+        "operator": "PKO BP",
+        "operator:wikidata": "Q578832"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10074052858,
+      "lat": 50.0609807,
+      "lon": 19.9364400,
+      "tags": {
+        "amenity": "atm",
+        "brand": "PKO BP",
+        "brand:wikidata": "Q578832",
+        "name": "PKO BP",
+        "operator": "PKO BP",
+        "operator:wikidata": "Q578832"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10080817915,
+      "lat": 50.0622603,
+      "lon": 19.9362533,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10125150601,
+      "lat": 50.0614029,
+      "lon": 19.9425307,
+      "tags": {
+        "amenity": "atm",
+        "opening_hours": "24/7",
+        "operator": "Euronet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10770831683,
+      "lat": 50.0603635,
+      "lon": 19.9361845,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "check_date": "2023-03-29",
+        "name": "Euronet",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11194543584,
+      "lat": 50.0663908,
+      "lon": 19.9389039,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Euronet",
+        "brand:wikidata": "Q5412010",
+        "cash_in": "yes",
+        "operator": "Euronet",
+        "operator:wikidata": "Q5412010"
+      }
+    }
+  ]
+}

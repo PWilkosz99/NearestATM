@@ -52,6 +52,7 @@ struct DetailView: View {
                         .foregroundColor(atm.cash_in ? .green : .red)
                 }
                 .accessibilityElement(children: .combine)
+                
                 if let openingHours = atm.opening_hours {
                                     HStack {
                                         Label {
@@ -65,6 +66,7 @@ struct DetailView: View {
                                     }
                                     .accessibilityElement(children: .combine)
                                 }
+                
                 if let fee = atm.fee {
                                     HStack {
                                         Label {
@@ -78,6 +80,7 @@ struct DetailView: View {
                                     }
                                     .accessibilityElement(children: .combine)
                                 }
+                
                 if let charge = atm.charge {
                                     HStack {
                                         Label {
@@ -91,6 +94,7 @@ struct DetailView: View {
                                     }
                                     .accessibilityElement(children: .combine)
                                 }
+                
                 if let wheelchair = atm.wheelchair {
                                     HStack {
                                         Label {
@@ -104,6 +108,7 @@ struct DetailView: View {
                                     }
                                     .accessibilityElement(children: .combine)
                                 }
+                
                 HStack {
                     Image(systemName: atm.isFavorite ? "heart.fill" : "heart")
                         .foregroundColor(themeColor)
