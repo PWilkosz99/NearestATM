@@ -21,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		9831A7E62B3188E9008C6FAF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		9831A7E82B3A532C008C6FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		987B23BD2AF0FBCA00381438 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		987B23C12AF101CD00381438 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		98BE94572B289D97004B5C7C /* OSMWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSMWrapper.swift; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		ACC309A32AE7B88A00ADB4F3 /* NearestATM */ = {
 			isa = PBXGroup;
 			children = (
+				9831A7E82B3A532C008C6FAF /* Info.plist */,
 				ACC309B72AE7BD7700ADB4F3 /* Models */,
 				ACC309B22AE7BA0400ADB4F3 /* Views */,
 				ACC309A42AE7B88A00ADB4F3 /* NearestATMApp.swift */,
@@ -314,6 +316,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NearestATM/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NearestATM/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to get user location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,6 +346,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NearestATM/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NearestATM/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to get user location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
