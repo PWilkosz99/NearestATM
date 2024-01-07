@@ -35,13 +35,14 @@ struct NearestATMApp: App {
                     .tabItem {
                         Label("List view", systemImage: "list.bullet")
                     }
-                    .onAppear {
-                        readAndDecodeJSON()
-                    }
-                MapView()
+                //MapView(atms: $ATMs)
+                MapView(atms: $ATMs)
                     .tabItem {
                         Label("Map view", systemImage: "map.circle.fill")
                     }
+            }
+            .onAppear{
+                readAndDecodeJSON()
             }
         }
     }
