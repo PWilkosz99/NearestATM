@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct DetailView: View {
     @Binding var atm: ATM
@@ -124,11 +125,22 @@ struct DetailView: View {
 
             }
             Section(header: Text("Location")) {
-                Image(.mockedMap)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .cornerRadius(5.0)
-                    .padding(5)
+                Map{
+                    Marker(coordinate: CLLocationCoordinate2D(latitude: atm.location.latitude, longitude: atm.location.longitude))
+                                        {
+                                            Text(atm.brand)
+                                                .padding(8)
+                                                .background(Color.blue)
+                                                .foregroundColor(.white)
+                                                .cornerRadius(8)
+                                        }
+                }
+                .mapControls {
+                  MapPitchToggle()
+                  MapUserLocationButton()
+                  MapCompass()
+                }
+                .frame(height: 400)
             }
         }
     }
