@@ -9,8 +9,13 @@ import SwiftUI
 
 struct CardView: View {
     @Binding var atm: ATM
+    let saveAction: () -> Void
+    
     var body: some View {
-        VStack(alignment: .leading) {
+        let openingHours = atm.opening_hours ?? atm.opening_hours ?? "24/7"
+        let fee = atm.fee ?? atm.fee ?? "Free"
+        
+        return VStack(alignment: .leading) {
             Text(atm.brand)
                 .font(.headline)
                 .padding(.bottom, 4)
@@ -18,17 +23,17 @@ struct CardView: View {
             Spacer()
             HStack {
                 VStack(alignment: .leading) {
-                    Label(atm.city, systemImage: "road.lanes")
+                    Label(openingHours, systemImage: "clock.fill")
                         .font(.caption)
                         .bold()
                         .multilineTextAlignment(.center)
                         .padding(.bottom)
-                        .accessibilityLabel("city \(atm.city)")
-                    Label(atm.address, systemImage: "mappin.and.ellipse")
+                        .accessibilityLabel("opening hours \(openingHours)")
+                    Label(fee, systemImage: "dollarsign.circle")
                         .font(.caption)
                         .bold()
                         .multilineTextAlignment(.center)
-                        .accessibilityLabel("address \(atm.address)")
+                        .accessibilityLabel("fee \(fee)")
                 }
                 Spacer()
                 Image(systemName: atm.cash_in ? "dollarsign.arrow.circlepath" : "xmark.circle")
@@ -41,6 +46,8 @@ struct CardView: View {
                     .foregroundColor(atm.isFavorite ? Color.red : Color.gray)
                     .onTapGesture {
                         atm.isFavorite = !atm.isFavorite
+                        saveAction()
+                        print("saved(card)")
                     }
                     .accessibilityLabel("atm \(atm.cash_in ? "" : "not") added to favorite")
             }
@@ -53,7 +60,7 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(atm: .constant(ATM.sampleData[0]))
+        CardView(atm: .constant(ATM.sampleData[0]), saveAction: {})
             .previewLayout(.fixed(width: 400, height: 60))
     }
 }

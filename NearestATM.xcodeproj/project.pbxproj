@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9831A7E72B3188E9008C6FAF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831A7E62B3188E9008C6FAF /* MapView.swift */; };
+		9831A7EA2B4D2D9B008C6FAF /* ATMStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831A7E92B4D2D9B008C6FAF /* ATMStore.swift */; };
 		987B23BE2AF0FBCA00381438 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987B23BD2AF0FBCA00381438 /* Theme.swift */; };
 		987B23C22AF101CD00381438 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987B23C12AF101CD00381438 /* DetailView.swift */; };
 		98BE94582B289D97004B5C7C /* OSMWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE94572B289D97004B5C7C /* OSMWrapper.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		9831A7E62B3188E9008C6FAF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		9831A7E82B3A532C008C6FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9831A7E92B4D2D9B008C6FAF /* ATMStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMStore.swift; sourceTree = "<group>"; };
 		987B23BD2AF0FBCA00381438 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		987B23C12AF101CD00381438 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		98BE94572B289D97004B5C7C /* OSMWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSMWrapper.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				ACC309B82AE7BD8000ADB4F3 /* ATM.swift */,
 				987B23BD2AF0FBCA00381438 /* Theme.swift */,
 				98BE94572B289D97004B5C7C /* OSMWrapper.swift */,
+				9831A7E92B4D2D9B008C6FAF /* ATMStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				ACC309B42AE7BA2900ADB4F3 /* CardView.swift in Sources */,
 				987B23BE2AF0FBCA00381438 /* Theme.swift in Sources */,
 				ACC309B92AE7BD8000ADB4F3 /* ATM.swift in Sources */,
+				9831A7EA2B4D2D9B008C6FAF /* ATMStore.swift in Sources */,
 				ACC309A52AE7B88A00ADB4F3 /* NearestATMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

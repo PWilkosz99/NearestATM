@@ -2,47 +2,40 @@ import SwiftUI
 
 @main
 struct NearestATMApp: App {
-    
-    func readAndDecodeJSON() {
-        do {
-            let fileURL = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
-                .appendingPathComponent("atms_krk.json")
-            
-            let jsonData = try Data(contentsOf: fileURL)
-            
-            if let jsonString = String(data: jsonData, encoding: .utf8) {
-                print("Raw JSON Data:")
-                print(jsonString)
-            }
-            
-            let decoder = JSONDecoder()
-            let atmArray = try decoder.decode(OSMWrapper.self, from: jsonData)
-            
-            print(atmArray.elements)
-            ATMs = atmArray.elements
-            
-        } catch {
-            print("Error reading or decoding JSON: \(error)")
-        }
-    }
-    
+    @StateObject private var store = ATMStore()
+
     @State private var ATMs = [ATM]()
     
     var body: some Scene {
         WindowGroup {
             TabView {
-                ATMsView(atms: $ATMs)
+                ATMsView(atms: $store.atms, saveAction: {
+                    Task {
+                        do {
+                            try await store.save(atms: store.atms)
+                        } catch {
+                            fatalError(error.localizedDescription)
+                        }
+                    }
+                }, refreshAction: {
+                    Task{
+                        try await store.loadFromJSON()
+                    }
+                })
                     .tabItem {
                         Label("List view", systemImage: "list.bullet")
                     }
-                //MapView(atms: $ATMs)
-                MapView(atms: $ATMs)
+                MapView(atms: $store.atms)
                     .tabItem {
                         Label("Map view", systemImage: "map.circle.fill")
                     }
             }
-            .onAppear{
-                readAndDecodeJSON()
+            .task{
+                do {
+                    try await store.load()
+                } catch {
+                    print("Local data not avaliable")
+                }
             }
         }
     }

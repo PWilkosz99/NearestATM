@@ -19,27 +19,6 @@ struct DetailView: View {
                 Label(atm.brand, systemImage: "banknote")
                     .font(.headline)
                     .foregroundColor(themeColor)
-                HStack {
-                    Label {
-                        Text("City")
-                    } icon: {
-                        Image(systemName: "building.2.fill")
-                            .foregroundColor(themeColor)
-                    }
-                    Spacer()
-                    Text(atm.city)
-                }
-                .accessibilityElement(children: .combine)
-                HStack {
-                    Label {
-                        Text("Address")
-                    } icon: {
-                        Image(systemName: "mappin")
-                            .foregroundColor(themeColor)
-                    }
-                    Spacer()
-                    Text(atm.address)
-                }
                 .accessibilityElement(children: .combine)
                 HStack {
                     Label {
