@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CardView: View {
     @Binding var atm: ATM
-    let saveAction: () -> Void
     
     var body: some View {
         let openingHours = atm.opening_hours ?? atm.opening_hours ?? "24/7"
@@ -46,8 +45,6 @@ struct CardView: View {
                     .foregroundColor(atm.isFavorite ? Color.red : Color.gray)
                     .onTapGesture {
                         atm.isFavorite = !atm.isFavorite
-                        saveAction()
-                        print("saved(card)")
                     }
                     .accessibilityLabel("atm \(atm.cash_in ? "" : "not") added to favorite")
             }
@@ -60,7 +57,7 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(atm: .constant(ATM.sampleData[0]), saveAction: {})
+        CardView(atm: .constant(ATM.sampleData[0]))
             .previewLayout(.fixed(width: 400, height: 60))
     }
 }

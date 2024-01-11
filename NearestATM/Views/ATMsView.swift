@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ATMsView: View {
     @Binding var atms: [ATM]
-    let saveAction: ()->Void
     let refreshAction: ()-> Void
     
     var body: some View {
@@ -19,9 +18,7 @@ struct ATMsView: View {
                 $atm in
                 NavigationLink(destination: DetailView(atm: $atm))
                 {
-                    CardView(atm: $atm, saveAction: {
-                        saveAction()
-                    })
+                    CardView(atm: $atm)
                 }
                 .listRowBackground(atm.cash_in ? Theme.electricBlue.mainColor : Theme.steelBlue.mainColor)
             }
@@ -39,5 +36,5 @@ struct ATMsView: View {
 }
 
 #Preview {
-    ATMsView(atms: .constant(ATM.sampleData), saveAction: {}, refreshAction: {})
+    ATMsView(atms: .constant(ATM.sampleData), refreshAction: {})
 }

@@ -4,21 +4,12 @@ import SwiftUI
 struct NearestATMApp: App {
     @StateObject private var store = ATMStore()
     @State private var isConfirmationDialogPresented = false
-
-    @State private var ATMs = [ATM]()
+    @Environment(\.scenePhase) private var scenePhase
     
     var body: some Scene {
         WindowGroup {
             TabView {
-                ATMsView(atms: $store.atms, saveAction: {
-                    Task {
-                        do {
-                            try await store.save(atms: store.atms)
-                        } catch {
-                            fatalError(error.localizedDescription)
-                        }
-                    }
-                }, refreshAction: {
+                ATMsView(atms: $store.atms, refreshAction: {
                     isConfirmationDialogPresented.toggle()
                 })
                 .confirmationDialog("Refresh Data", isPresented: $isConfirmationDialogPresented, actions: {
@@ -38,9 +29,9 @@ struct NearestATMApp: App {
                 .tabItem {
                     Label("List view", systemImage: "list.bullet")
                 }
-                    .tabItem {
-                        Label("List view", systemImage: "list.bullet")
-                    }
+                .tabItem {
+                    Label("List view", systemImage: "list.bullet")
+                }
                 MapView(atms: $store.atms)
                     .tabItem {
                         Label("Map view", systemImage: "map.circle.fill")
@@ -51,6 +42,18 @@ struct NearestATMApp: App {
                     try await store.load()
                 } catch {
                     print("Local data not avaliable")
+                }
+            }
+            .onChange(of: scenePhase) { newScenePhase in
+                if newScenePhase == .inactive {
+                    Task {
+                        do {
+                            try await store.save(atms: store.atms)
+                            print("Data saved on app inactive")
+                        } catch {
+                            print("Error saving data: \(error)")
+                        }
+                    }
                 }
             }
         }
