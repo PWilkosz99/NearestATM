@@ -16,14 +16,10 @@ struct MapView: View {
             ForEach(atms, id: \.id)
             {
                 atm in
-                Marker(coordinate: CLLocationCoordinate2D(latitude: atm.location.latitude, longitude: atm.location.longitude))
-                                {
-                                    Text(atm.brand)
-                                        .padding(8)
-                                        .background(Color.blue)
-                                        .foregroundColor(.white)
-                                        .cornerRadius(8)
-                                }
+                let markerColor = atm.cash_in ? Theme.electricBlue.mainColor : Theme.lavenderMist.mainColor
+                let markerIcon = atm.cash_in ? "dollarsign.arrow.circlepath" : "dollarsign"
+                Marker(atm.brand, systemImage: markerIcon, coordinate: atm.location)
+                    .tint(markerColor)
             }
         }
         .mapControls {
